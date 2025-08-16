@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div id="loginSection">
+    <h2>Employee Login</h2>
+    <input type="text" id="employeeId" placeholder="Employee ID">
+    <input type="password" id="employeePass" placeholder="Password">
+    <button id="loginSubmit">Login</button>
+    <p id="loginError" style="color:red;"></p>
+  </div>
+
+  <div id="dashboard" style="display:none;">
+    <h2>Admin Dashboard</h2>
+    <form id="productForm">
+      <input type="text" id="pName" placeholder="Product Name" required>
+      <input type="text" id="pImage" placeholder="Image URL" required>
+      <input type="number" id="pPrice" placeholder="Price" required>
+      <input type="number" id="pDiscount" placeholder="Discount (optional)">
+      <input type="text" id="pCategory" placeholder="Category" required>
+      <button type="submit">Add Product</button>
+    </form>
+    <h3>Product List</h3>
+    <ul id="productList"></ul>
+  </div>
+
+  <script src="firebase.js" type="module"></script>
+  <script src="admin.js" type="module"></script>
+</body>
+</html>
