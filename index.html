@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ATR Clothing Store</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>ATR Clothing</h1>
+    <nav>
+      <input type="text" id="searchBox" placeholder="Search products...">
+      <select id="categoryFilter">
+        <option value="all">All Categories</option>
+      </select>
+      <button id="cartBtn">Cart (<span id="cartCount">0</span>)</button>
+      <button id="loginBtn" onclick="window.location.href='admin.html'">Employee Login</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="products" class="product-grid"></section>
+  </main>
+
+  <footer>
+    <a href="https://wa.me/201234567890" target="_blank">Contact us on WhatsApp</a>
+  </footer>
+
+  <script src="firebase.js" type="module"></script>
+  <script src="app.js" type="module"></script>
+</body>
+</html>
